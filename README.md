@@ -11,6 +11,7 @@ In the base directory (./Programming-Assignment-2/), run:
 ```
 python src/cache_sim.py <input_file>
 ```
+Keep in mind the location of the input file. For example use tests/example.in; for inputx, with x being whichever number input file, use data/inputx.in
 
 ### Example
 
@@ -55,7 +56,6 @@ OPTFF : <misses>
 - Item IDs are positive integers.
 - All tokens may be separated by spaces or newlines.
 
----
 
 ## Written Component
 
@@ -116,4 +116,4 @@ e* is never requested again) or defers a potential miss to a later time (since j
 way the total miss count for A' never exceeds that of A.
 
 Repeating this across every divergence point transforms A into OPTFF without increasing misses,
-so misses(OPTFF) <= misses(A) for any offline algorithm A. ∎
+so misses(OPTFF) <= misses(A) for any offline algorithm A.
